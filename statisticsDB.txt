@@ -1,0 +1,170 @@
+create database statisticsDB;
+use statisticsDB;
+
+SET NAMES utf8mb4;
+SET FOREIGN_KEY_CHECKS = 0;
+-- ----------------------------
+-- Table structure for book_statistics
+-- ----------------------------
+DROP TABLE IF EXISTS `book_statistics`;
+CREATE TABLE `book_statistics`  (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `book_name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL,
+  `borrow_count` int NULL DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 131 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci ROW_FORMAT = DYNAMIC;
+
+-- ----------------------------
+-- Records of book_statistics
+-- ----------------------------
+INSERT INTO `book_statistics` VALUES (1, '战争与和平', 1);
+INSERT INTO `book_statistics` VALUES (2, '傲慢与偏见', 2);
+INSERT INTO `book_statistics` VALUES (3, '三国演义', 2);
+INSERT INTO `book_statistics` VALUES (4, '百年孤独', 2);
+INSERT INTO `book_statistics` VALUES (5, '红楼梦', 2);
+INSERT INTO `book_statistics` VALUES (6, '西游记', 2);
+INSERT INTO `book_statistics` VALUES (7, '安徒生童话选', 3);
+INSERT INTO `book_statistics` VALUES (8, '简爱', 3);
+INSERT INTO `book_statistics` VALUES (9, '悲惨世界', 2);
+INSERT INTO `book_statistics` VALUES (10, '飘', 1);
+INSERT INTO `book_statistics` VALUES (11, '巴黎圣母院', 0);
+INSERT INTO `book_statistics` VALUES (12, '呼啸山庄', 2);
+INSERT INTO `book_statistics` VALUES (13, '钢铁是怎样炼成的', 1);
+INSERT INTO `book_statistics` VALUES (14, '茶花女', 0);
+INSERT INTO `book_statistics` VALUES (15, '雾都孤儿', 0);
+INSERT INTO `book_statistics` VALUES (16, '鲁滨逊漂流记', 0);
+INSERT INTO `book_statistics` VALUES (17, '双城记', 0);
+INSERT INTO `book_statistics` VALUES (18, '红与黑', 0);
+INSERT INTO `book_statistics` VALUES (19, '哈姆雷特', 0);
+INSERT INTO `book_statistics` VALUES (20, '堂吉诃德', 1);
+INSERT INTO `book_statistics` VALUES (21, '悲惨世界（精装版）', 0);
+INSERT INTO `book_statistics` VALUES (22, '追风筝的人', 0);
+INSERT INTO `book_statistics` VALUES (23, '平凡的世界', 1);
+INSERT INTO `book_statistics` VALUES (24, '复活', 0);
+INSERT INTO `book_statistics` VALUES (25, '活着', 1);
+INSERT INTO `book_statistics` VALUES (26, '月亮与六便士', 0);
+INSERT INTO `book_statistics` VALUES (27, '狂人日记', 0);
+INSERT INTO `book_statistics` VALUES (28, '白夜行', 0);
+INSERT INTO `book_statistics` VALUES (29, '基督山伯爵', 0);
+INSERT INTO `book_statistics` VALUES (30, '霍比特人', 0);
+INSERT INTO `book_statistics` VALUES (31, '安娜·卡列尼娜', 0);
+INSERT INTO `book_statistics` VALUES (32, '骆驼祥子', 0);
+INSERT INTO `book_statistics` VALUES (33, '白鹿原', 0);
+INSERT INTO `book_statistics` VALUES (34, '飘（电影版）', 0);
+INSERT INTO `book_statistics` VALUES (35, '许三观卖血记', 0);
+INSERT INTO `book_statistics` VALUES (36, '人间词话', 0);
+INSERT INTO `book_statistics` VALUES (37, '围城', 0);
+INSERT INTO `book_statistics` VALUES (38, '老人与海', 0);
+INSERT INTO `book_statistics` VALUES (39, '安徒生童话选（精选版）', 0);
+INSERT INTO `book_statistics` VALUES (40, '雪山飞狐', 0);
+INSERT INTO `book_statistics` VALUES (41, '罪与罚', 0);
+INSERT INTO `book_statistics` VALUES (42, '荆棘鸟', 0);
+INSERT INTO `book_statistics` VALUES (43, '红楼梦（插图版）', 0);
+INSERT INTO `book_statistics` VALUES (44, '三国演义（注释版）', 1);
+INSERT INTO `book_statistics` VALUES (45, '简爱（英汉对照版）', 0);
+INSERT INTO `book_statistics` VALUES (46, '悲惨世界（经典版）', 0);
+INSERT INTO `book_statistics` VALUES (47, '傲慢与偏见（插画版）', 0);
+INSERT INTO `book_statistics` VALUES (48, '红楼梦（青少版）', 0);
+INSERT INTO `book_statistics` VALUES (49, '三国演义（少儿版）', 0);
+INSERT INTO `book_statistics` VALUES (50, '百年孤独（纪念版）', 1);
+INSERT INTO `book_statistics` VALUES (51, '飘（珍藏版）', 0);
+INSERT INTO `book_statistics` VALUES (52, '巴黎圣母院（青少版）', 0);
+INSERT INTO `book_statistics` VALUES (53, '雾都孤儿（英汉对照版）', 0);
+INSERT INTO `book_statistics` VALUES (54, '白夜行（限量版）', 0);
+INSERT INTO `book_statistics` VALUES (55, '活着（电影版）', 0);
+INSERT INTO `book_statistics` VALUES (56, '老人与海（绘本版）', 0);
+INSERT INTO `book_statistics` VALUES (57, '堂吉诃德（全译本）', 0);
+INSERT INTO `book_statistics` VALUES (58, '安徒生童话选（儿童版）', 0);
+INSERT INTO `book_statistics` VALUES (59, '基督山伯爵（典藏版）', 0);
+INSERT INTO `book_statistics` VALUES (60, '霍比特人（豪华版）', 0);
+INSERT INTO `book_statistics` VALUES (61, '骆驼祥子（注解版）', 0);
+INSERT INTO `book_statistics` VALUES (62, '平凡的世界（新版）', 1);
+INSERT INTO `book_statistics` VALUES (63, '白鹿原（插图版）', 0);
+INSERT INTO `book_statistics` VALUES (64, '围城（电影版）', 0);
+INSERT INTO `book_statistics` VALUES (65, '许三观卖血记（青少版）', 0);
+INSERT INTO `book_statistics` VALUES (66, '月亮与六便士（电影版）', 0);
+INSERT INTO `book_statistics` VALUES (67, '红与黑（电影版）', 0);
+INSERT INTO `book_statistics` VALUES (68, '茶花女（电影版）', 0);
+INSERT INTO `book_statistics` VALUES (69, '复活（电影版）', 0);
+INSERT INTO `book_statistics` VALUES (70, '荆棘鸟（电影版）', 1);
+INSERT INTO `book_statistics` VALUES (71, '罪与罚（电影版）', 0);
+INSERT INTO `book_statistics` VALUES (72, '追风筝的人（电影版）', 0);
+INSERT INTO `book_statistics` VALUES (73, '红楼梦（电影版）', 0);
+INSERT INTO `book_statistics` VALUES (74, '三国演义（电影版）', 0);
+INSERT INTO `book_statistics` VALUES (75, '百年孤独（电影版）', 0);
+INSERT INTO `book_statistics` VALUES (76, '飘（电影版）', 0);
+INSERT INTO `book_statistics` VALUES (77, '巴黎圣母院（电影版）', 0);
+INSERT INTO `book_statistics` VALUES (78, '雾都孤儿（电影版）', 0);
+INSERT INTO `book_statistics` VALUES (79, '白夜行（电影版）', 0);
+INSERT INTO `book_statistics` VALUES (80, '活着（电影版）', 0);
+INSERT INTO `book_statistics` VALUES (81, '老人与海（电影版）', 2);
+INSERT INTO `book_statistics` VALUES (82, '堂吉诃德（电影版）', 0);
+INSERT INTO `book_statistics` VALUES (83, '安徒生童话选（电影版）', 0);
+INSERT INTO `book_statistics` VALUES (84, '基督山伯爵（电影版）', 0);
+INSERT INTO `book_statistics` VALUES (85, '霍比特人（电影版）', 0);
+INSERT INTO `book_statistics` VALUES (86, '骆驼祥子（电影版）', 0);
+INSERT INTO `book_statistics` VALUES (87, '平凡的世界（电影版）', 3);
+INSERT INTO `book_statistics` VALUES (88, '白鹿原（电影版）', 3);
+INSERT INTO `book_statistics` VALUES (89, '斗破苍穹', 0);
+INSERT INTO `book_statistics` VALUES (90, '许三观卖血记（电影版）', 5);
+INSERT INTO `book_statistics` VALUES (91, '全职高手', 0);
+INSERT INTO `book_statistics` VALUES (92, '我不是戏神', 0);
+INSERT INTO `book_statistics` VALUES (93, '庆余年', 0);
+INSERT INTO `book_statistics` VALUES (94, '诡秘之主', 0);
+INSERT INTO `book_statistics` VALUES (95, '凡人修仙传', 0);
+INSERT INTO `book_statistics` VALUES (96, '大主宰', 0);
+INSERT INTO `book_statistics` VALUES (97, '雪鹰领主', 0);
+INSERT INTO `book_statistics` VALUES (98, '一世之尊', 0);
+INSERT INTO `book_statistics` VALUES (99, '圣墟', 0);
+INSERT INTO `book_statistics` VALUES (100, '元尊', 0);
+
+
+-- ----------------------------
+-- Table structure for user_statistics
+-- ----------------------------
+DROP TABLE IF EXISTS `user_statistics`;
+CREATE TABLE `user_statistics`  (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `user_name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL,
+  `activity_count` int NULL DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 1300 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci ROW_FORMAT = DYNAMIC;
+
+-- ----------------------------
+-- Records of user_statistics
+-- ----------------------------
+INSERT INTO `user_statistics` VALUES (1, 'wz', 0);
+INSERT INTO `user_statistics` VALUES (2, 'wzz', 3);
+INSERT INTO `user_statistics` VALUES (3, 'wzz1', 0);
+INSERT INTO `user_statistics` VALUES (4, '13da', 0);
+INSERT INTO `user_statistics` VALUES (5, 'zhj', 0);
+INSERT INTO `user_statistics` VALUES (6, '312d', 0);
+INSERT INTO `user_statistics` VALUES (7, '1313', 0);
+INSERT INTO `user_statistics` VALUES (8, '3123', 0);
+INSERT INTO `user_statistics` VALUES (9, '1321', 0);
+INSERT INTO `user_statistics` VALUES (10, '313', 0);
+INSERT INTO `user_statistics` VALUES (11, 'zyl', 0);
+INSERT INTO `user_statistics` VALUES (12, 'zhl', 0);
+INSERT INTO `user_statistics` VALUES (13, 'wt', 0);
+INSERT INTO `user_statistics` VALUES (14, 'wt34', 0);
+INSERT INTO `user_statistics` VALUES (15, 'wr', 0);
+INSERT INTO `user_statistics` VALUES (16, 'wr13', 0);
+INSERT INTO `user_statistics` VALUES (17, 'r2rt', 0);
+INSERT INTO `user_statistics` VALUES (18, '1414', 0);
+INSERT INTO `user_statistics` VALUES (19, '313314', 0);
+INSERT INTO `user_statistics` VALUES (20, 'wzx', 0);
+INSERT INTO `user_statistics` VALUES (21, 'zxcc', 0);
+INSERT INTO `user_statistics` VALUES (22, 'qwer', 0);
+INSERT INTO `user_statistics` VALUES (23, 'qwert', 0);
+INSERT INTO `user_statistics` VALUES (24, 'asdf', 0);
+INSERT INTO `user_statistics` VALUES (25, 'wzzz', 0);
+INSERT INTO `user_statistics` VALUES (26, 'zs', 0);
+INSERT INTO `user_statistics` VALUES (27, 'asdasd', 0);
+INSERT INTO `user_statistics` VALUES (28, 'lllllll', 0);
+INSERT INTO `user_statistics` VALUES (29, 'asdsadd', 0);
+INSERT INTO `user_statistics` VALUES (30, 'ss3', 0);
+INSERT INTO `user_statistics` VALUES (1298, '火影大王', 21);
+INSERT INTO `user_statistics` VALUES (1299, '宇智波佐助', 3);
+
+SET FOREIGN_KEY_CHECKS = 1;
+

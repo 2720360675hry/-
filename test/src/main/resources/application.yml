@@ -1,0 +1,24 @@
+Spring:
+  datasource:
+    username: root
+    password: huang123456
+    url: jdbc:mysql://localhost:3306/cloudlibrary
+server:
+  port:8080
+
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+
+autoconfigure:
+  exclude=org:
+    springframework:
+      boot:
+        autoconfigure:
+          security:
+            servlet:
+              SecurityAutoConfiguration:
